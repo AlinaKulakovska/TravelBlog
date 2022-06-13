@@ -1,0 +1,589 @@
+:root{
+    --green: rgb(54,64,55);
+    --yellow: rgb(232,222,201);
+    --brown:rgb(152,108,67);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    background-color: var(--green);
+    width: 100%;
+    z-index: 1;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+    color: var(--yellow);
+}
+
+.title_icon{
+    margin-left: 100px;
+}
+.title_small{
+    font-size: 18px;
+    position: relative;
+    left: 60px;
+    font-style: italic;
+    top: -10px;
+}
+/*____________________Navigation__________________*/
+.nav{
+    margin-right: 100px;
+}
+.nav_link{
+    display: inline-flex;
+    justify-content: space-between;
+    color: white;
+    font-style: italic;
+}
+.nav_a{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+.nav_link:nth-last-child(4){
+    margin-right: 0px;
+}
+
+.nav_a:hover{
+    color: var(--yellow);
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.search{
+    background-color: var(--green);
+    color: white;
+    height: 50px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.search:hover, .search:focus{
+    border: 2px solid white;
+}
+/*____________________Icons__________________*/
+.bx-world{
+    position: relative;
+    color: var(--yellow);
+    font-size: 48px;
+    top: 25px;
+    margin-right: 10px;
+}
+.bx-search-alt-2{
+    color: white;
+    position: relative;
+    right: 25px;
+}
+/*____________________portrait__________________*/
+.img_portrait{
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.portrait{
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    background-color: var(--brown);
+}
+.portrait_p, .portrait_h2{
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+/*____________________Side links__________________*/
+.side_links{
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    background-color: var(--brown);
+    display:grid;
+    top: 300px;
+}
+.side_a{
+    color: white;
+    text-decoration: none;
+}
+.side_link{ 
+    padding: 10px;
+    font-size: 25px;
+    list-style: none;
+}
+/*____________________background img__________________*/
+.main_img{
+    background: url(https://grishkoff.pro/wp-content/uploads/2017/07/phuket.jpg) no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 800px;
+}
+/*____________________Featured Post__________________*/
+.post{
+    position: relative;
+    background-color: var(--green);
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    top: -150px;
+}
+.post_h1{
+    padding: 30px; 
+}
+.post_img{
+    padding: 0 30px;
+}
+
+.post_wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.post_text{
+color: white;
+padding: 0 30px;
+}
+
+hr{
+    color: var(--brown);
+    margin: 25px 0;
+}
+/*____________________Recent Post__________________*/
+.recent_post{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    position: relative;
+    top: -50px;
+}
+
+.recent_h1{
+    color: black;
+}
+
+.recent_wrap{
+    border: 1px solid rgb(180, 180, 180, 0.5);
+    margin: 10px;
+    min-width: 290px;
+    max-width: 290px;
+}
+
+.recent_wrap:hover{
+   box-shadow: 0px 0px 5px gray;
+}
+
+.recent_img{
+    width: 290px;
+    height: 170px;
+}
+.recent_text{
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.recent_a{
+    color: var(--brown);
+    text-decoration: none;
+    color: #000;
+}
+
+.recent_a:hover{
+    color: var(--brown);
+    text-decoration: none;
+}
+
+.recent_p{
+    padding: 15px;
+    font-size: 16px;
+}
+
+.bx-comment{
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+/*____________________statistic__________________*/
+.stat{
+    height: 300px;
+    background-color: var(--brown);
+    margin-bottom: 20px;
+}
+
+.stat_content{
+    column-count: 4;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.stat_text{
+    color: white;
+    font-size: 24px;
+}
+.stat_number{
+    color: var(--yellow);
+    font-size: 40px;
+}
+/*____________________carousel__________________*/
+.carousel {
+    position: relative;
+    width: 990px;
+    padding: 30px 40px;
+    margin: 0 auto;
+  }
+  
+  .carousel img {
+    width: 330px;
+    height: 330px;
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 170px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 7px;
+  }
+  
+  .next {
+    right: 7px;
+  }
+  
+  .gallery {
+    width: 990px;
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    height: 340px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+    /* http://davidwalsh.name/remove-whitespace-inline-block */
+    font-size: 0;
+  }
+  
+  .gallery li {
+    display: inline-block;
+    border: 5px solid white ;
+  }
+/*____________________Questions__________________*/
+.value_questions{
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.value_questions_item{
+    border: 2px solid lightgray;
+    border-radius: .5rem;
+    padding: 1rem .75rem;
+    background-color: var(--yellow);
+    margin: 0px 150px;
+}
+
+.value_questions_header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.value_arrow{
+    display: inline-flex;
+    padding: .25rem;
+    margin-left: auto;
+    transition: .3s;
+}
+
+.value_arrow i{
+    transition: .4s;
+}
+
+.value_description{
+    padding: 1.25rem 2.5rem 0 2.75rm;
+}
+.value_content{
+    overflow: hidden;
+    height: 0;
+    transition: all .25s ease-out;
+}
+
+.questions_open{
+    box-shadow: 0 12px 30px rgb(209, 180, 160);
+}
+
+/*____________________sponsors__________________*/
+
+grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 75px;
+    grid-gap: 190px;
+    margin-top: 30px;
+  }
+
+  grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .grid_img{
+      width: 100px;
+  }
+/*____________________footer__________________*/
+footer{
+    background-color: var(--green);
+}
+.footer{
+    background-color: var(--green);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.foot_li{
+    list-style: none;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.foot_a{
+    color: white;
+    text-decoration: none;
+}
+
+.email{
+    width: 250px;
+    margin-right: 200px;
+}
+
+.email_btn{
+    padding: 15px;
+    background-color: var(--brown);
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin: 20px 0px;
+}
+
+.footer_p{
+    margin: 0;
+text-align: center;
+color: white;
+}
+
+/*____________________hamburger__________________*/
+.hum{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    nav{
+        display: none;
+    }
+    .hum{
+        display: flex;
+    }
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 30px;
+        right: 10px;
+        padding: 4px;
+        border: black solid 1px;
+        background: var(--brown);
+        cursor: pointer;
+        color: var(--yellow);
+        
+      }
+     
+      .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: var(--green);
+        color: white;
+        list-style: none;
+        padding-top: 4rem;    
+    }
+
+    .menuItem{
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+    
+      .material-icons{
+          color: white;
+          font-size: 24px;
+          
+      }
+      .showMenu {
+        transform: translateY(-50px);
+      }
+
+      .post{
+        width: 290px;
+        
+      }
+      .post_img,.post_h1{
+        width: 200px;
+        padding: 10px;
+      }
+
+      .post_wrap{
+        display: block;
+        padding-bottom: 30px;
+    }
+      .post_text{
+      padding: 0 10px;
+    }
+      .main_img{
+          height: 400px;
+          padding-bottom: 100px;
+
+      }
+      .portrait{
+          top: 90px;
+          position: absolute;
+        left: 50px;
+      }
+      .img_portrait{
+          width: 100px;
+      }
+
+      .main{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        position: relative;
+        top: -50px;
+    }
+
+    .recent_post{
+        display: flex;
+        justify-content: center;
+    }
+    .recent_h1{
+        text-align: center;
+        padding: 25px;
+    }
+    .recent_text{
+        font-size: 16px;
+    }
+      h1, h2{
+          font-size: 16px;
+      }
+
+      .footer{
+        display: block;
+        padding-top: 50px;
+    }
+
+    .stat_text{
+        font-size: 16px;
+    }
+    .stat_number{
+        font-size: 24px;
+
+    }
+
+    .search, .bx-search-alt-2{
+        visibility: hidden;
+    }
+
+    .side_link{ 
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .email{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    h1{
+        margin: 0;
+        color: var(--yellow);
+    }
+    
+    .title_icon{
+        margin-left: 10px;
+        padding-bottom: 20px;
+    }
+    .title_small{
+        font-size: 18px;
+        position: relative;
+        left: 60px;
+        font-style: italic;
+        top: -10px;
+    }
+    grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+      }
+    .grid_img{
+        width: 50px;
+    }
+
+    .value_questions_item{
+        margin: 10px 50px;
+        padding: .5rem .25rem;
+    }
+
+    .carousel{
+        display: none;
+    }
+}
