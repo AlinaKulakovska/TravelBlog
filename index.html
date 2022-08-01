@@ -153,7 +153,7 @@
         <div class="arrow prev"><i class='bx bx-left-arrow-alt'></i></div>
         <div class="gallery">
           <ul>
-            <li><img src="https://static.parastorage.com/services/instagram-cdn/1.691.0/assets/ig-templates-accounts/Editor/Travelling%20Blog/01.jpg"></li>
+            <li><img id="img1" src="https://static.parastorage.com/services/instagram-cdn/1.691.0/assets/ig-templates-accounts/Editor/Travelling%20Blog/01.jpg"></li>
             <li><img src="https://static.parastorage.com/services/instagram-cdn/1.691.0/assets/ig-templates-accounts/Editor/Travelling%20Blog/02.jpg"></li>
             <li><img src="https://static.parastorage.com/services/instagram-cdn/1.691.0/assets/ig-templates-accounts/Editor/Travelling%20Blog/03.jpg"></li>
             <li><img src="https://static.parastorage.com/services/instagram-cdn/1.691.0/assets/ig-templates-accounts/Editor/Travelling%20Blog/04.jpg"></li>
@@ -290,7 +290,7 @@
         ScrollReveal().reveal('.portrait', { reset: true });
         ScrollReveal().reveal('.post', { origin: "bottom", distance: "100px", duration: 1500, });
 
-//______________________burder menu____________________________
+//______________________burger menu____________________________
         const menu = document.querySelector(".menu");
         const menuItems = document.querySelectorAll(".menuItem");
         const hamburger = document.querySelector(".hamburger");
@@ -352,9 +352,15 @@
       i++;
     }
 //______________________carousel____________________________
-    /* конфигурация */
-    let width = 340; // ширина картинки
-    let count = 4; // видимое количество изображений
+
+
+    let width = document.getElementById("img1").clientWidth + 10 //10-border
+    let count = 3; // видимое количество изображений
+
+    if (document.documentElement.clientWidth < 500){
+        let width = document.getElementById("img1").clientWidth + 10 //10-border
+        count = 1;
+     }
 
     let list = carousel.querySelector('ul');
     let listElems = carousel.querySelectorAll('li');

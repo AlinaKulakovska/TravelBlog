@@ -94,7 +94,7 @@ h1{
 
 .portrait{
     position: absolute;
-    top: 90px;
+    top: 85px;
     left: 100px;
     background-color: var(--brown);
 }
@@ -169,7 +169,7 @@ hr{
 .main{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 75%;
     position: relative;
     top: -50px;
 }
@@ -249,7 +249,7 @@ hr{
     padding: 30px 40px;
     margin: 0 auto;
   }
-  
+
   .carousel img {
     width: 330px;
     height: 330px;
@@ -534,6 +534,7 @@ color: white;
     }
 
     .search, .bx-search-alt-2{
+        display: none;
         visibility: hidden;
     }
 
@@ -583,7 +584,39 @@ color: white;
         padding: .5rem .25rem;
     }
 
-    .carousel{
-        display: none;
-    }
+    .carousel img {
+        width: 220px;
+        height: 220px;
+      } 
+
+      .gallery {
+        width: 220px;
+        overflow: hidden;
+      }
+
+      .carousel {
+        width: 220px;
+        padding: 5px 10px;
+      }
+    
+      
+      .arrow {
+        top: 90px;
+      }
+    
+      
+      .prev {
+        left: -15px;
+      }
+      
+      .next {
+        right: -15px;
+      }
+      
+      
+      .gallery ul {
+        height: 220px;
+      }
+      
 }
+
